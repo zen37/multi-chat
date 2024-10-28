@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Box</title>
+  <style>
+    /* ... */
+  </style>
+</head>
+<body>
+  <h1>Input Box</h1>
+  <input type="text" id="input-box" placeholder="Type something...">
+  <script>
+    const { contextBridge } = require('electron');
+    contextBridge.exposeInMainWorld('api', {
+      send: (channel, ...args) => {
+        window.api.send(channel, ...args);
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Electron build artifacts
+/dist/
+/build/
+/release/
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Electron debug logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+.atom/
+
+# Miscellaneous
+*.tmp
+*.bak
+*.swp
